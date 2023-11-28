@@ -1,27 +1,22 @@
 import "./App.css";
-import Trainer from "./components/Trainer";
 import Header from "./components/Header";
-import Trainee from "./components/Trainee";
-import Footer from "./components/Footer";
-import Pet1 from "./components/pet1";
+import kings from "./Data/kings.json";
+import KingSolution from "./components/KingSolution";
 
-// react component called App
 function App() {
+  console.log("List of kings:", KingSolution);
+  const kingConst = [];
+  for (const king of kings) {
+    console.log("List of Kings", king);
+    kingConst.push(
+      <KingSolution nm={king.nm} cty={king.cty} hse={king.hse} yrs={king.yrs} />
+    );
+  }
   return (
     <div>
-      <header></header>
-      <Header />
-      <h1>React App</h1>
-      <p>geia</p>
-      <p>sou</p>
-      <Trainer name="Jordan H" age="29" specialism="software" />
-      <Trainee name="Michaela" age="30" specialism="trainee" />
-      <Footer name="Placeholder.name" age="0" specialism="none" />
-      <Pet1 name="Arianna" age="1.5" specialism="cat" />
+      <header>{kingConst}</header>
     </div>
   );
 }
 
 export default App;
-
-

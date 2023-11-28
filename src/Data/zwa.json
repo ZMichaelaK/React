@@ -1,0 +1,17 @@
+[
+    { 
+        "name": "Audrey",
+        "age": 3,
+        "specialism": "cat"
+    },
+    {
+        "name": "Papia",
+        "age": 42,
+        "specialism": "tsifths"
+    },
+    {
+        "name": "Mparmpagiannis",
+        "age": 100,
+        "specialism": "epishs tsifths" 
+    }
+]
